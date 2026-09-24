@@ -1,0 +1,16 @@
+# This proposal repo is public. Keep internal working data outside this repo.
+/private/
+/raw-data/
+/local-drafts/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.DS_Store
+Thumbs.db
+~$*
+*.tmp
+*.bak
