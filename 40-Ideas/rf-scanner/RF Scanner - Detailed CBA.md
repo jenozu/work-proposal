@@ -2,7 +2,7 @@
 type: cost-benefit
 status: draft
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-28
 confidence: estimated
 tags:
   - rf-scanner
@@ -38,16 +38,27 @@ Do not treat RF submodules as independent savings when the parent RF CBA already
 - Usable capacity value: `$6,480 × 75% = $4,860`
 - Hosting/integration allowance: `$420/year`
 - Maintenance allowance: `$1,440/year`
-- **Annual net operational value: `$4,860 − $1,860 = $3,000`**
+- **Original illustrative annual net operational value: `$4,860 − $1,860 = $3,000`, before the new licence estimate**. This historical planning case is superseded by the alternatives below for submission.
 
 **Accounting distinction:** This is opportunity/capacity value, not guaranteed cost savings. Separately track avoided overtime, external software, errors and truly avoidable spending. Never add the same released capacity twice.
+
+### SAP integration licence update (2026-09-28; provisional)
+
+The user proposes an integration licence at approximately **CAD $100/month, billed annually (~$1,200 annual commitment)**, subject to confirmation of the integration product, entitlement, vendor quote and applicable fees. The original model's $420 hosting/integration line may overlap the proposed licence. Do **not** add costs without reconciling them:
+
+- **Replacement case:** $1,200 licence + $1,440 maintenance = **$2,640/year**; $4,860 − $2,640 = **$2,220 annual net operational capacity value**.
+- **Additional-cost case:** $1,200 licence + $420 original allowance + $1,440 maintenance = **$3,060/year**; $4,860 − $3,060 = **$1,800 annual net operational capacity value**.
+
+Neither amount is verified and both rely on the original unmeasured workflow assumptions. The $1,200 is recurring and billed annually; there may be additional costs or contractual requirements not yet identified. Record the actual initial cash due on purchase and separate that from recurring run-rate reporting.
 
 ## 4. Incremental implementation estimate
 - Remaining development: `80 × $40 = $3,200`
 - Training/testing: `12 × $30 = $360`
 - Additional equipment: `$0` assumed, verify
 - **Initial remaining investment: `$3,560`**
-- **Steady-state payback: `$3,560 ÷ ($3,000 / 12) = 14.24 months`**
+- **Original baseline payback before licence update:** `$3,560 ÷ ($3,000 / 12) = 14.24 months` (not current submission estimate).
+- **Replacement-case payback:** `$3,560 ÷ ($2,220 / 12) ≈ 19.2 months`.
+- **Additional-cost-case payback:** `$3,560 ÷ ($1,800 / 12) ≈ 23.7 months`.
 
 Payback begins only when benefits actually start; the ramp-up period may extend calendar payback. Maintenance time and testing time must not be counted twice.
 
@@ -68,7 +79,7 @@ Assume only for illustration: five customers, $250/month subscription and $1,500
 - External rights: resolve ownership/IP and data/privacy permissions before commercialization.
 
 ## 9. Measurement plan
-See [[RF Scanner - Pilot Test Plan]] and [[60-Day Pilot Plan]]. Baseline and assisted samples should use comparable order complexity, routes, employees and workloads. Record unsuccessful trials too.
+Propose a **30-day RF Scanner pilot** after approval and SAP test-server access. The separately drafted [[60-Day Pilot Plan]] is outdated for this project and must be revised; use [[RF Scanner - Pilot Test Plan]] as the workflow measurement starting point. Baseline and assisted samples should use comparable order complexity, routes, employees and workloads. Record unsuccessful trials too.
 
 ## 10. Open data
 Actual activity volumes, loaded hourly rate, before/after distributions, maintenance hours, hardware needs, external quotes and adoption ramp: **TBD**.
