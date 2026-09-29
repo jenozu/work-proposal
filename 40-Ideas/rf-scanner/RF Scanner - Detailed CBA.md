@@ -2,84 +2,85 @@
 type: cost-benefit
 status: draft
 created: 2026-09-24
-updated: 2026-09-28
-confidence: estimated
+updated: 2026-09-29
+confidence: mixed
 tags:
   - rf-scanner
   - analysis
 ---
 
-# RF Scanner — Detailed Cost-Benefit Analysis
+# RF Scanner + Shipping Automation — Detailed Working CBA
 
-**Working example only.** Figures below are placeholders to be replaced by pilot measurements. Existing work is a sunk investment for the go-forward payback; a separate whole-project historical-cost view may be prepared if management requests it.
+**Scope:** Combined RF warehouse application and planned Purolator shipping integration. Proposed **30-day pilot**, conditional on management approval and SAP test-server access. No automated shipping savings have yet been observed.
 
-## 1. Scope
-Evaluate four observable workflows: inventory lookup; full picking cycle including wave sorting; receiving plus putaway; and inventory counting. Record quality as well as speed. Other planned product features are outside this initial benefit estimate.
+## 1. Evidence register and inputs
 
-## 2. Baseline model (illustrative)
-Assume 240 applicable working days per year. A volume is the **total annualizable activity across the users in scope**, not a per-employee number to multiply again.
+| Input | Current working value | Evidence quality |
+|---|---:|---|
+| SAP shipment documents over approximately two years | 6,174 | Observed screenshot from SAP query, exact filters still to review |
+| Annual average based on two-year window | 3,087 | Calculated: 6,174 ÷ 2 |
+| Average shipment documents per active shipping date | 12.5 | Calculated by SAP query |
+| Estimated proportion sent via Purolator | 90% | Employee estimate; verify via SAP carrier or Purolator records |
+| Estimated eligible Purolator shipments annually | 2,778.3 (≈2,778) | Calculated: 3,087 × 90%; assumes 1 document = 1 eligible shipment |
+| Current manual handling per shipment | About 3 min | Employee estimate, to time directly |
+| Minutes eliminated by automation | Unknown; model 1, 2 and 3 min | Scenario only; 3 min is theoretical maximum |
+| Labour valuation | **$24/hour** | Employee's stated base wage, not fully loaded cost |
+| Pilot duration | 30 days | Proposed, not approved |
+| Integration licence | ~CAD $100/month, paid annually (~$1,200) | Employee's provisional quote; exact API/licence/terms unconfirmed |
 
-| Task | Total tasks/day | Before min | After min | Hours released/year |
+**Query caution:** The screenshot counts distinct SAP DocEntry and distinct dates. Confirm whether it excludes cancellations, combines deliveries into one package, misses manual shipments or includes customer pickups and UPS. SAP document counts are a starting point, not automatically carrier transaction counts.
+
+## 2. Shipping-module annual-value scenarios
+
+General formula:
+
+`Annual Purolator hours potentially released = (SAP annual shipments × eligible Purolator proportion × minutes truly eliminated) ÷ 60`
+
+`Wage-equivalent capacity value = hours released × $24/hour`
+
+| Minutes actually eliminated | Annual hours potentially released | Annual capacity value at base wage |
+|---:|---:|---:|
+| 1 min | 46.305 h | $1,111.32 |
+| 2 min | 92.610 h | $2,222.64 |
+| 3 min | 138.915 h | $3,333.96 |
+
+The **2-minute scenario** is an illustration, not an observed outcome. It equates to about **7.7 h/month** and **$185.22/month** of wage-valued capacity. At 3 minutes, theoretical monthly released time is approximately **11.6 h**. Measure remaining physical packing, printing, exception handling and any manual reviews separately; time may not fall to zero.
+
+Any reduction in manual shipment-notification emails belongs to the **Shipping Notifications** project unless that function is explicitly delivered as part of the integrated RF scope. Do not count the same action in two CBAs.
+
+## 3. Other RF Scanner modules — awaiting baseline
+
+| Workflow | Annual volume | Before time | Assisted time | Annual hours released |
 |---|---:|---:|---:|---:|
-| Inventory lookup | 12 | 3 | 1.5 | 72 |
-| Picking (including sorting) | 10 | 9 | 7 | 80 |
-| Receiving / putaway | 3 | 15 | 11 | 48 |
-| Counting | 1 | 20 | 16 | 16 |
-| **Total** | | | | **216** |
+| Inventory lookup | TBD | TBD | TBD | TBD |
+| Picking, **including sorting** | TBD | TBD | TBD | TBD |
+| Receiving and putaway | TBD | TBD | TBD | TBD |
+| Inventory counting | TBD | TBD | TBD | TBD |
 
-For each task: `(before minutes - after minutes) × total tasks/day × 240 ÷ 60`.
-Do not treat RF submodules as independent savings when the parent RF CBA already includes them.
+Previously published totals of **216 annual hours released**, derived from hypothetical activity frequencies/timings, were **never verified**. Do not include them in the current submission total until replaced with actual measurements. Avoid counting RF modules again as separate portfolio savings.
 
-## 3. Annual internal value (illustrative)
-- Hours released: `216`
-- Fully loaded labour assumption: `$30/hour` — requires verification
-- Capacity value: `216 × 30 = $6,480`
-- Usable-capacity factor: `75%` — requires validation
-- Usable capacity value: `$6,480 × 75% = $4,860`
-- Hosting/integration allowance: `$420/year`
-- Maintenance allowance: `$1,440/year`
-- **Original illustrative annual net operational value: `$4,860 − $1,860 = $3,000`, before the new licence estimate**. This historical planning case is superseded by the alternatives below for submission.
+## 4. Costs and financial interpretation
 
-**Accounting distinction:** This is opportunity/capacity value, not guaranteed cost savings. Separately track avoided overtime, external software, errors and truly avoidable spending. Never add the same released capacity twice.
+The user has confirmed a **$24/hour base wage**. This provides a simple labour-capacity valuation, **not** an employer's fully loaded rate; payroll taxes, benefits and other overhead have not been quantified. Freed time is operational capacity rather than cash savings unless it leads to documented avoided overtime, replacement hiring or other actual expense.
 
-### SAP integration licence update (2026-09-28; provisional)
+**Provisional required spend:** SAP integration licence around **$1,200/year, paid annually**, dependent on the actual integration method and a written quotation. This may be an upfront annual cash commitment; check whether a test licence or existing entitlement is available before purchase.
 
-The user proposes an integration licence at approximately **CAD $100/month, billed annually (~$1,200 annual commitment)**, subject to confirmation of the integration product, entitlement, vendor quote and applicable fees. The original model's $420 hosting/integration line may overlap the proposed licence. Do **not** add costs without reconciling them:
+**To confirm:** incremental development hours and whether undertaken on paid time; training and pilot time; hosting; maintenance/support workload; equipment; security and integration expenses. Earlier $3,560 remaining implementation, $420 hosting/integration and $1,440 maintenance estimates were placeholders and should **not** be used as current costs without evidence.
 
-- **Replacement case:** $1,200 licence + $1,440 maintenance = **$2,640/year**; $4,860 − $2,640 = **$2,220 annual net operational capacity value**.
-- **Additional-cost case:** $1,200 licence + $420 original allowance + $1,440 maintenance = **$3,060/year**; $4,860 − $3,060 = **$1,800 annual net operational capacity value**.
+**Net annual operational value and payback: TBD.** Once the eligible workflows and realistic times are known, calculate gross wage-equivalent capacity; separately report any demonstrated cash savings and actual recurring costs. The shipping-only scenario is not a complete RF business case; do not infer full-system payback from it.
 
-Neither amount is verified and both rely on the original unmeasured workflow assumptions. The $1,200 is recurring and billed annually; there may be additional costs or contractual requirements not yet identified. Record the actual initial cash due on purchase and separate that from recurring run-rate reporting.
+## 5. Proposed 30-day pilot evidence
 
-## 4. Incremental implementation estimate
-- Remaining development: `80 × $40 = $3,200`
-- Training/testing: `12 × $30 = $360`
-- Additional equipment: `$0` assumed, verify
-- **Initial remaining investment: `$3,560`**
-- **Original baseline payback before licence update:** `$3,560 ÷ ($3,000 / 12) = 14.24 months` (not current submission estimate).
-- **Replacement-case payback:** `$3,560 ÷ ($2,220 / 12) ≈ 19.2 months`.
-- **Additional-cost-case payback:** `$3,560 ÷ ($1,800 / 12) ≈ 23.7 months`.
+Before starting: request management approval and SAP test-server access; verify carrier integration credentials, licence scope and permitted test data. Log a representative baseline for Purolator shipments and each in-scope RF module.
 
-Payback begins only when benefits actually start; the ramp-up period may extend calendar payback. Maintenance time and testing time must not be counted twice.
+During approved testing, capture shipment creation/review/label-print times separately, successful and failed requests, mismatch/correction rates, and the same metrics for comparable manual runs. Include practical staffing effects and supported warehouse-module trials. Preserve identifiable business data only within approved company systems.
 
-## 5. Internal process quality (initially unpriced)
-Log lookup correctness, receipt variance, picking errors and final sorting issues, recounts, adoption, uptime and user feedback. Price only benefits supported by observed rates and attributable costs.
+At the end, update this analysis with measured before/after savings, confirmed annual volume, incremental and operating costs, limitations and a decision on further implementation.
 
-## 6. Internal vs external comparison
-Internal development may have a lower **remaining** cost than commissioning comparable custom work externally, particularly because a prototype exists. Do not claim a measured price advantage without formal like-for-like external quotations that include integration, training, ongoing support, hosting, ownership and maintenance.
+## 6. External business case — separate future investigation
 
-## 7. External commercial scenario — NOT internal value
-Assume only for illustration: five customers, $250/month subscription and $1,500 implementation. Full-year recurring gross revenue `5 × 250 × 12 = $15,000`; setup gross revenue `5 × 1,500 = $7,500`. Combined gross first year **$22,500** only if all customers sign at start and remain for 12 months. No support, generalization, hosting, acquisition or tax costs included. Do not label this profit or forecast.
+Adaptation to other distributors could generate software-licence, implementation or support revenue only after verifying product readiness, legal/IP ownership, market interest, generalization costs and support obligations. Do not use hypothetical external sales to reduce internal payback.
 
-## 8. Key risks and controls
-- SAP data freshness / permitted integration: validate.
-- Inventory consistency and concurrency: test before relying on movements.
-- User adoption: include training and real-user trials.
-- Scope creep: advanced features are not a prerequisite for the MVP.
-- External rights: resolve ownership/IP and data/privacy permissions before commercialization.
+## 7. Open decisions
 
-## 9. Measurement plan
-Propose a **30-day RF Scanner pilot** after approval and SAP test-server access. The separately drafted [[60-Day Pilot Plan]] is outdated for this project and must be revised; use [[RF Scanner - Pilot Test Plan]] as the workflow measurement starting point. Baseline and assisted samples should use comparable order complexity, routes, employees and workloads. Record unsuccessful trials too.
-
-## 10. Open data
-Actual activity volumes, loaded hourly rate, before/after distributions, maintenance hours, hardware needs, external quotes and adoption ramp: **TBD**.
+Confirm actual Purolator percentage and shipment equivalence; precise 3-minute task boundaries; feasible automation time reduction; verified costs and entitlement to the integration licence; annual activity volumes and times for other RF modules; whether the pilot will include an end-to-end shipping integration.
