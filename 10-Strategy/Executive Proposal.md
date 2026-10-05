@@ -2,33 +2,40 @@
 type: proposal
 status: draft
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-10-05
 confidence: observed
 tags:
   - management
   - executive
+  - software-development
 ---
 
 # Executive Proposal
 
+> This short executive note will be finalized after the evidence sections in [[Detailed Proposal]] are completed. The 13-section Detailed Proposal is now the canonical working document.
+
 ## The opportunity
-Every department has repetitive tasks and inefficient processes that consume employee time. Some can be improved through practical software tools and automation. MARINDUSTRIAL could improve productivity, reduce operating costs and give employees more effective tools by addressing these inefficiencies systematically.
+Recurring operational tasks across warehouse, receiving, shipping, inventory, purchasing, finance-adjacent document workflows and other functions may be improved through practical internal software and process redesign.
 
-## The proposal
-Establish an internal operations improvement initiative focused on identifying, developing and implementing practical solutions to everyday operational inefficiencies.
+The working method is:
 
-**Identify the problem → Measure the current process → Develop a solution → Test it → Measure the results.**
+**Identify the problem → Measure the current process → Analyze the cause → Design and build the solution → Test and deploy → Measure the result → Maintain and improve.**
 
-## Initial opportunities
-Warehouse operations, invoice matching, document retrieval, shipping, customs documentation and operational reporting are initial candidates. Each project receives its own cost-benefit analysis before significant additional investment.
+## Evidence already being developed
+At least one completed internal automation — invoice retrieval and filing — now has a 12-month historical volume analysis and a measured manual-handling baseline. Exact internal operating figures remain in private working evidence until approved for publication.
 
-## Cost-effective internal development
-Several tools, particularly the RF Scanner, already have development work behind them. Completing them internally may require less additional investment than commissioning an equivalent external solution through N'ware or IT contractors. **This is a hypothesis to verify with like-for-like scope, internal fully loaded costs, support obligations, licences and actual external quotations.**
+Additional candidate initiatives include warehouse RF tools, cycle counting, invoice / PO / GRPO comparison, shipping and customs-document automation, product-classification support, and other operational systems justified by measured need.
 
-## Additional revenue
-Proven internal tools may later be adapted for other distributors and warehouse-based companies through software licences, implementations or support agreements. External revenue is a separate opportunity, not part of the initial internal payback justification.
+## Proposed capability
+Create a formal internal software-development capability focused on operational systems and automation.
 
-## Request
-Authorize a focused **60-day pilot** to validate selected tools, measure operational outcomes and present management with verified results and recommendations.
+### Proposed Position: Software Developer
 
-See [[Executive Portfolio Summary]] and [[60-Day Pilot Plan]].
+The proposed Software Developer position would be best aligned with **Engineering & Operations**, given its focus on internal software development, process automation, operational systems, and cross-functional improvement initiatives.
+
+The position would be responsible for identifying opportunities for process improvement and automation, gathering operational requirements, designing and developing internal software solutions, testing and deploying applications, maintaining production systems, resolving bugs, documenting solutions, and measuring their operational and financial impact.
+
+## Decision approach
+The final proposal should justify the role through measured operational value, clearly separated assumptions, realistic implementation costs, and agreed success metrics. Compensation is addressed as a later formal review tied to the expanded role, market context, and demonstrated results rather than serving as the primary case for approval.
+
+See [[Detailed Proposal]], [[Executive Portfolio Summary]], and [[60-Day Pilot Plan]].
