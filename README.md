@@ -1,23 +1,40 @@
-# Work Proposal — Operations Improvement & Automation
+# Marindustrial — Internal Software Development Pre-Proposal
 
-Obsidian-compatible working knowledge base for the MARINDUSTRIAL operations improvement proposal, its proposed automation tools, individual cost-benefit analyses, a 60-day pilot, and potential future commercialization.
+**Current working edition: October 14, 2026 · Management pre-proposal · Draft for review**
 
-This repo follows the numbered-folder, linked-note approach in `jenozu/trade-brain`, adapted for an operations proposal. Start with [Home.md](Home.md) and use [SCHEMA.md](SCHEMA.md) when adding material.
+The current proposal is a focused business case for **controlled automation pilots** and, subject to demonstrated results, a **dedicated internal software development role**. It is not a request to launch a 23-tool programme or replace SAP Business One.
 
-**Evidence standard:** Keep measured results, assumptions, hypothetical examples, and commercial scenarios clearly separated. Internal time-value estimates are not automatically cash savings; possible external revenue is not guaranteed income. Only publish information approved for public sharing.
+## Read the current proposal in order
 
-## Layout
+1. [Executive Summary](proposal/01-executive-summary.md)
+2. [Opportunity Portfolio](proposal/02-opportunity-portfolio.md)
+3. [Five Priority Pilot Projects](proposal/03-five-priority-pilots.md) — links to five full project write-ups
+4. [Estimated Cost-Benefit Summary](proposal/04-estimated-cost-benefit.md)
+5. [Pilot Approach & Management Request](proposal/05-pilot-approach-and-request.md)
+6. [Future Opportunities (optional)](proposal/appendix-future-opportunities.md)
 
-- `00-Inbox/` — unsorted suggestions and questions.
-- `10-Strategy/` — short and detailed management proposals, commercialization strategy.
-- `20-Architecture/` — shared approach and integration boundaries.
-- `30-Decisions/` — approved assumptions and decision log.
-- `40-Ideas/` — **one folder per proposed tool** with overview and eventual supporting analysis.
-- `50-Cost-Benefit/` — shared method and consolidated portfolio comparison.
-- `60-Pilot/` — 60-day pilot plan and measurement protocol.
-- `70-Project-State/` — current status, deliverables, and next actions.
-- `80-Glossary/` — management-friendly definitions.
-- `90-Sources/` — evidence register and source/permission guidance.
-- `Templates/` — consistent reusable documents.
+[Proposal navigation and editorial status](proposal/README.md) · [Evidence register](evidence/README.md) · [Pilot measurement worksheet](evidence/pilot-measurement-template.md)
 
-The linked repository for implementation of a tool (such as the RF Scanner) remains authoritative for what the software currently does. These proposal documents are planning material, not evidence of completed implementation.
+## The five initial projects
+
+- Automated Inventory Cycle Counting
+- Centralized Reporting & Automated Business Intelligence
+- Automated Batch Shipping & SAP Integration
+- Automated Direct-Ship Processing & SAP Invoice Management
+- RF Scanner & Warehouse Management System
+
+These are **initial opportunities**, not the limits of the envisioned ongoing role.
+
+## Previous work retained
+
+The original numbered folders (**00-Inbox** through **90-Sources**), templates, **master.md**, and **10-Strategy** documents reflect an **earlier, larger proposal structure**. They remain on this branch as historical working notes. They are **not** the current management-facing outline. Follow the **proposal/** documents first; some older cost-benefit scenarios and implementation ideas are unverified or now out of scope.
+
+## Evidence and confidentiality
+
+This is a **public GitHub repository**. Treat published numbers as preliminary, aggregated working figures, not audited company records or approved public disclosures. Do not upload raw SAP exports, customer/employee records, invoices, internal screens, credentials, vendor pricing, or proprietary extracts. Obtain Marindustrial authorization before circulating company-specific findings outside the intended management audience. Keep the complete confidential research in an approved private system.
+
+A measured baseline, a calculated scenario, a development target, and a validated pilot result are different claims. Do not describe released employee capacity as automatic payroll savings, or add overlapping pilot benefits twice.
+
+## Current decision requested
+
+Approve a **limited, supervised pilot evaluation**, subject to agreed scope, access and controls. Evaluate a formal internal software development position **after** pilot results demonstrate sustainable business value.

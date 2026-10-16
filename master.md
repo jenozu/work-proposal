@@ -1,3 +1,5 @@
+> **ARCHIVED ROADMAP (October 14, 2026):** This checklist documents the prior 13-section / wider-portfolio proposal. The current canonical management approach is the [five-section lean pre-proposal](proposal/README.md). Retained for history; do not use it to determine current pilot scope.
+
 # MARINDUSTRIAL Work Proposal — Master Plan
 
 > Canonical task checklist for the Roadmap tool. The purpose is to **write, substantiate and present the operations improvement proposal and its individual cost-benefit analyses**, not to finish building every proposed application.
