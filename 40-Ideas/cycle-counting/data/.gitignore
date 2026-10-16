@@ -1,0 +1,4 @@
+# Restricted workbooks and exports must not be committed to this public repository.
+*
+!.gitignore
+!README.md
