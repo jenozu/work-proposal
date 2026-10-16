@@ -1,4 +1,6 @@
-# Restricted workbooks and exports must not be committed to this public repository.
-*
-!.gitignore
-!README.md
+# Ignore editor/Excel lock files and temporary exports, not the intended .xlsx sources.
+~$*
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db

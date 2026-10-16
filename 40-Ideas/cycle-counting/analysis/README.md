@@ -1,9 +1,5 @@
 # Cycle Counting — Analysis
 
-This folder is for public-safe descriptions of the cycle-counting methodology, validation notes, and sanitized summaries.
+Use this folder for cycle-counting methodology, formula review, results, tests, pilot planning, and derived outputs. Preserve the six original workbooks in [../data](../data/README.md).
 
-The detailed master workbook and any derived files containing real SAP data must remain in an approved private workspace.
-
-The working source workbook is `master_inventory.xlsx`; see [source file manifest](../data/README.md). Do not publish inventory-level data or company-private workbook results in this public repository.
-
-When approved, reproducible analysis scripts or formulas that do not disclose confidential data can be documented here.
+Keep source data and derived results distinguishable. Document whenever an analysis is estimated, a pilot measurement, or a verified result. Avoid modifying the original source workbooks in place.
