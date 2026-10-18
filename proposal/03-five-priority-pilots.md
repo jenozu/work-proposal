@@ -1,13 +1,15 @@
 # 3. Five Priority Pilot Projects
 
-The following briefs describe five initial opportunities. Each begins with an observed workflow and proposed improvement, then identifies the operational measures needed to establish actual value. Descriptions are **proposed pilot scopes**, not claims that SAP integrations or the complete software are already operational.
+The five controlled pilot candidates below illustrate a broader internal software-development capability. Each detailed brief states the problem, solution, preliminary analysis, expected benefits, evaluation plan and primary objective. None represents an approved deployment or a guarantee of achieved savings.
 
-| Priority project | Main objective | Detailed project write-up |
+| Pilot | Core question | Detailed brief |
 |---|---|---|
-| **1. Automated Inventory Cycle Counting** | Spread risk-based counting throughout the year and assess whether the disruptive annual shutdown could eventually be avoided | [Read brief](pilots/01-inventory-cycle-counting.md) |
-| **2. Centralized Reporting & Automated Business Intelligence** | Automate repeatable reports and make consistent information accessible to management | [Read brief](pilots/02-centralized-reporting.md) |
-| **3. Automated Batch Shipping & SAP Integration** | Reduce manual Purolator and SAP delivery processing per shipment | [Read brief](pilots/03-batch-shipping-sap.md) |
-| **4. Automated Direct-Ship Processing & SAP Invoice Management** | Simplify interbranch direct-ship transactions and attach matched invoice documents | [Read brief](pilots/04-direct-ship-invoice-management.md) |
-| **5. RF Scanner & Warehouse Management System** | Expand barcode-guided receiving, picking, staging and inventory workflows | [Read brief](pilots/05-rf-scanner-wms.md) |
+| **1. Automated Inventory Cycle Counting** | Can ongoing controlled counts preserve warehouse continuity and improve reliability? | [Project 1](pilots/01-inventory-cycle-counting.md) |
+| **2. Centralized Reporting & Automated Business Intelligence** | Can recurring reports be made more consistent with less manual preparation? | [Project 2](pilots/02-centralized-reporting.md) |
+| **3. Automated Batch Shipping & SAP Integration** | Can Purolator and SAP delivery handling be combined reliably? | [Project 3](pilots/03-batch-shipping-sap.md) |
+| **4. Warehouse Slotting & Picking Optimization** | Can high-frequency physical picks be assigned to nearer suitable bins to reduce walking? | [Project 4](pilots/04-warehouse-slotting-picking-optimization.md) |
+| **5. RF Scanner & Warehouse Management System** | Can barcode-guided receiving, picking and staging reduce workflow friction? | [Project 5](pilots/05-rf-scanner-wms.md) |
 
-All five projects are subject to technical feasibility, appropriate access, user acceptance, security review and measurable improvements. Project 1 inventory counting and Project 3 shipping are deliberately **excluded from the additive RF Scanner benefit totals** where workflows overlap. See [cost-benefit summary](04-estimated-cost-benefit.md) and [evidence register](../evidence/README.md).
+**Deferred:** [Automated Direct-Ship Processing & SAP Invoice Management](backlog/01-direct-ship-invoice-management.md) is now the **first Tier 1 near-term Future Opportunities item**, not the fourth pilot.
+
+Do not count the same benefit multiple times: Project 1 owns cycle-counting changes; Project 3 owns Purolator/SAP shipping; Project 4 owns storage-placement and walking-distance effects; Project 5 should report only independent RF interface improvements. See the [cost-benefit section](04-estimated-cost-benefit.md).
