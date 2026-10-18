@@ -1,15 +1,13 @@
 # Work Proposal — Current Home
 
-> **Current approach (October 2026):** the five-section management pre-proposal in [proposal/](proposal/README.md) supersedes the previous 13-section proposal plan. Existing 00–90 notes are preserved as historical research, not current presentation structure.
+> **October 18, 2026:** The lean, five-priority management pre-proposal under [proposal](proposal/README.md) supersedes the historical 13-section roadmap. The [complete proposal](proposal/complete-pre-proposal.md) is also available as one NotebookLM-friendly reading source.
 
-## Management documents
+## Management reading order
 
-1. [Executive Summary](proposal/01-executive-summary.md)
-2. [Opportunity Portfolio](proposal/02-opportunity-portfolio.md)
-3. [Five Priority Pilot Projects](proposal/03-five-priority-pilots.md)
-4. [Estimated Cost-Benefit Summary](proposal/04-estimated-cost-benefit.md)
-5. [Pilot Approach & Management Request](proposal/05-pilot-approach-and-request.md)
+[Executive Summary](proposal/01-executive-summary.md) → [Opportunity Portfolio](proposal/02-opportunity-portfolio.md) → [Five Priority Pilots](proposal/03-five-priority-pilots.md) → [Cost-Benefit](proposal/04-estimated-cost-benefit.md) → [Pilot Request](proposal/05-pilot-approach-and-request.md) → [Future Opportunities](proposal/appendix-future-opportunities.md).
 
-Supporting: [pilot write-ups](proposal/03-five-priority-pilots.md) · [research and evidence](evidence/README.md) · [future backlog](proposal/appendix-future-opportunities.md).
+## Supporting notes
 
-Previous documents: [master.md](master.md) and [10-Strategy](10-Strategy/). **Legacy, not canonical.**
+[Evidence and calculation register](evidence/README.md) · [Pilot measurements](evidence/pilot-measurement-template.md) · [NotebookLM / agent-orchestration research](notebooklm/README.md).
+
+Older [master.md](master.md), [10-Strategy](10-Strategy/) and 00–90 notes are **historical**, not authority for current pilot scope.
