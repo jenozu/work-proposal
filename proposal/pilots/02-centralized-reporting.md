@@ -2,27 +2,26 @@
 
 ## Current Challenge
 
-Recurring departmental reporting may require employees to extract SAP Business One data, organize spreadsheets, reconcile figures and distribute information manually. While those reports provide useful operational oversight, repeated preparation can consume time and may produce inconsistent formatting or delays. The proposed scope spans service, sales, purchasing, inventory, finance and warehouse reporting across relevant branches.
-
-One identified weekly **service reporting** workflow is preliminarily estimated at **1–2 hours of employee time per week**. This estimate provides a starting point, not a verified company-wide reporting baseline. Other reporting tasks and frequency must be inventoried before a consolidated benefit can be calculated.
+Recurring departmental reporting can require employees to extract SAP data, assemble spreadsheets, reconcile values and distribute reports manually. Necessary oversight work can be time consuming and sometimes inconsistent across departments and branches.
 
 ## Proposed Solution
 
-Develop internal reporting workflows and a **centralized business intelligence dashboard** that draw from approved SAP Business One data sources. Standardize the definitions behind key performance indicators, automate recurring report generation and delivery, and make suitable information accessible to authorized employees and managers.
+Pilot approved automated SAP data retrieval, standardized definitions and controlled scheduled reporting. Start by replicating one existing weekly service report and verifying its figures before automated distribution. Later, validated dashboards could support sales, inventory, purchasing, finance, service and shipping.
 
-A first pilot could focus on an existing, clearly owned weekly service report: reproduce the required figures automatically, check them against the current report, and obtain sign-off before scheduling distribution. Additional dashboards should be added only when data ownership, permissions and business value are clear.
+## Preliminary Analysis
+
+The weekly service report has been **estimated** at **1–2 hours of manual preparation per week**, or **52–104 workload hours/year** over 52 weeks. This is neither a repeated timed baseline nor a confirmed automation saving. Other reports have not been consistently inventoried or measured.
 
 ## Expected Benefits
 
-- Reduce repeated manual extraction and spreadsheet preparation.
-- Make information more consistent, timely and easier to access.
-- Reduce dependence on individuals manually assembling recurring reports.
-- Make it easier to identify exceptions and take action using current operational information.
+Potentially reduce recurring compilation and formatting, improve timely access and consistency, and give managers reliable information without repeated manual assembly. Review, exception management and maintenance remain necessary.
 
 ## Pilot & Evaluation
 
-Document the report's actual fields, sources, preparation time, review steps and correction frequency. Time the complete manual process and compare it with the complete automated process, including verification and error resolution. Record requirements for branch-level permissions, hosting, maintenance and data definitions. Use these measured results to annualize only the workload that is realistically eliminated.
+Document fields, data source, preparation steps, approvals and correction rates. Compare complete manual and assisted cycles, including validation and errors. Track development and support effort and annualize **net verified** handling time only. Confirm permissions and definitions with owners.
 
-**Primary objective:** Improve management visibility and release employee capacity from repetitive report preparation without compromising report accuracy.
+## Primary Objective
 
-Supporting evidence: [Reporting research](../../evidence/reporting-baseline.md).
+Improve reporting reliability and management visibility while reducing avoidable manual preparation, without weakening accuracy.
+
+Supporting evidence: [reporting baseline](../../evidence/reporting-baseline.md).
