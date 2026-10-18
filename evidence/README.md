@@ -1,25 +1,19 @@
-# Evidence, calculation and measurement register
+# Evidence and Measurement Register
 
-**Purpose:** Keep the concise management proposal credible. Distinguish **observed**, **historical analysis**, **calculated scenario**, **target**, and **unknown**. All internal measurements require company review before external circulation; the repository is public.
+Figures in the pre-proposal are preliminary working claims, not management-audited results. This is a **public GitHub repository**; private transaction data, invoices, employee/customer details, proprietary prices and raw SAP exports must not be uploaded without company authorization.
 
-| Supporting note | What it covers | Status |
+| Supporting note | Contents | Status |
 |---|---|---|
-| [Inventory / cycle counting](inventory-cycle-counting.md) | Prior physical counts, historical count accuracy, preliminary ABC modelling | Historical / provisional |
-| [Reporting](reporting-baseline.md) | One weekly service report and company-wide reporting gaps | Preliminary estimate |
-| [Shipping](shipping-baseline.md) | 30 + 45 second baseline; 10–15 second target; volume scenarios | Workflow timing + scenario |
-| [Direct shipping / invoice](invoice-and-direct-ship.md) | Two SAP administrative workflows and separate document-volume study | Workflow observations; timed SAP baseline missing |
-| [RF scanner](rf-scanner-pilot.md) | Existing software starting point, overlap boundaries, test design | Development status requires verification |
-| [Pilot measurement template](pilot-measurement-template.md) | Shared before/after recording and ROI inputs | Ready for data collection |
+| [Cycle counting](inventory-cycle-counting.md) | Annual count, historical accuracy, A/B/C trial cadence | Historical and provisional |
+| [Reporting](reporting-baseline.md) | Weekly service-report workload | Preliminary estimate |
+| [Shipping](shipping-baseline.md) | 75-second baseline, 10–15-second target, 2,020-shipment scenario | Measured/ historical inputs + projected time |
+| [Warehouse slotting](warehouse-slotting.md) | Local physical-pick event cleaning and pilot simulation design | Research; no observed travel savings |
+| [RF Scanner](rf-scanner-pilot.md) | Existing codebase, representative task tests | Status needs code and demo verification |
+| [Direct-Ship and Invoices](invoice-and-direct-ship.md) | Deferred near-term workflow and retrieval research | No verified SAP processing savings |
+| [Pilot measurement worksheet](pilot-measurement-template.md) | Comparable before/after study fields | Proposed data collection |
 
-## Claim rules
+## Classification rules
 
-1. **Observed** means directly timed or verified in an operational record; record date, process and sampling method.
-2. **Historical** means derived from a prior-period report or extract. Retain the private source identifier, scope and query/date.
-3. **Scenario** combines documented assumptions; always disclose volume, time, days, and whether review/maintenance are included.
-4. **Target** is a performance goal; it is **not** an achieved pilot result.
-5. **TBD** means missing evidence. Do not replace it with an invented number.
-6. Report **released hours**, **avoidable cash costs**, **downtime avoided**, and **quality improvements** separately.
-7. Do not sum RF, counting and shipping savings for any shared activity.
-8. Raw internal source files, customers, invoices, supplier pricing, exact identifiers, access secrets and confidential exports belong in an approved **private** location, not this public repository.
+**Observed:** timed or confirmed directly with scope/date/sample. **Historical:** recorded prior-period evidence, subject to source review. **Scenario:** calculation based on explicit assumptions. **Target:** proposed goal, not achieved. **Unknown:** research still required.
 
-These notes synthesize October 2026 working conversations and existing proposal material; they are **not** replacements for signed-off source records.
+Keep separately recorded categories for cash avoidance, employee capacity, continuity, accuracy and throughput. No double counting across cycle counting, shipping, slotting and RF. Do not infer management approval, production-readiness or audited ROI from this draft.

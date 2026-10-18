@@ -1,34 +1,17 @@
-# Shipping + SAP delivery — preliminary time study
+# Shipping + SAP Delivery — Baseline and Projection
 
-## Timed current workflow and proposed target
+| Input | Value | Classification |
+|---|---:|---|
+| Purolator shipment entry and label printing | **30 seconds** | Prior manual handling measurement |
+| SAP Business One delivery creation and printing | **45 seconds** | Prior manual handling measurement |
+| Combined existing handling | **75 seconds/shipment** | Derived baseline |
+| Proposed assisted handling | **10–15 seconds/shipment** | **Unverified target** |
+| Potential reduction | **60–65 seconds/shipment** | Conditional scenario |
+| Potential per-shipment reduction | **80.0–86.7%** | Conditional scenario |
+| Completed shipment volume (Oct 2025–Sep 2026) | **2,020** | Historical review; exclude cancelled shipments |
 
-| Step | Current handling estimate |
-|---|---:|
-| Purolator shipment creation and label printing | **30 sec** |
-| SAP Business One delivery creation and printing | **45 sec** |
-| **Total** | **75 sec/shipment** |
-| Proposed assisted workflow **target** | **10–15 sec/shipment** |
-| Potential time reduction **if target achieved** | **60–65 sec/shipment** |
-| Percentage reduction against 75 sec | **80.0–86.7%** |
+**Annual scenario:** 2,020 × (60–65 seconds) ÷ 3,600 = **33.7–36.5 employee-hours per year** if every historical shipment is eligible, reaches the proposed handling target and requires no additional net review. That assumption is **not validated**. Do not call this achieved or financial savings.
 
-New assisted workflow: supply SO number, package weight, dimensions, and shipment type when relevant; system retrieves order details, produces Purolator label, creates SAP delivery and prints both via supported approved interfaces. Verify serial numbers, address, order line mapping and exceptional cases before posting.
+Older illustrative scenarios used 5–10 shipments/day × 250 working days to show 21–45 annual hours. The updated historical-volume scenario is preferred as a working reference, subject to reconfirming its source, eligibility and representativeness. **Do not add the scenarios together.**
 
-## Annual shipping scenario (not a measured annual volume)
-
-Assume **250 workdays** and average **5–10 shipments per day** for illustration.
-
-| Assumed shipments per working day | Annual shipments | Hours released at 60 sec | Hours released at 65 sec |
-|---:|---:|---:|---:|
-| 5 | 1,250 | 20.8 | 22.6 |
-| 10 | 2,500 | 41.7 | 45.1 |
-| 15 (peak comparison only) | 3,750 | 62.5 | 67.7 |
-
-The proposal uses approximately **21–45 hours/year** for the 5–10/day scenario, not the 15/day peak. At **1,000 shipments**, the conditional range is **16.7–18.1 hours**.
-
-Busy-day throughput, fewer repeated entries and avoidance of corrections may matter beyond simple hours released; these are **not separately monetized**. Do not equate this directly with staff cost cuts.
-
-## Pilot controls
-
-Time representative shipments end-to-end. Include normal, multi-line, serialized, international/exceptional where relevant, voided and failed transmissions. Require correct labels, tracking, SAP quantities, delivery references and print completion before treating a trial as successful. Measure process operator handling and total system response separately.
-
-Source: October 2026 direct observation (30s and 45s) and derived calculation.
+Measure current and assisted *complete* transaction handling, separately tracking machine wait time and operator time. Include address and order checks, carrier label acceptance, SAP posting, printouts, serials, multiline shipments, failures/retries, voiding, discrepancies and employee approval. Review interface fees, development effort and support needs. Even if the direct financial impact is modest, the project may demonstrate repeatable automation value.
