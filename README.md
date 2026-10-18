@@ -1,23 +1,32 @@
-# Work Proposal — Operations Improvement & Automation
+# Marindustrial — Internal Software Development Pre-Proposal
 
-Obsidian-compatible working knowledge base for the MARINDUSTRIAL operations improvement proposal, its proposed automation tools, individual cost-benefit analyses, a 60-day pilot, and potential future commercialization.
+**Working revision: October 18, 2026. Draft for management review.**
 
-This repo follows the numbered-folder, linked-note approach in `jenozu/trade-brain`, adapted for an operations proposal. Start with [Home.md](Home.md) and use [SCHEMA.md](SCHEMA.md) when adding material.
+This repository holds a concise, evidence-led management pre-proposal for supervised software/automation pilots, and eventual consideration of a dedicated internal Software Developer role. Proposed tools would complement SAP Business One 10.0, not replace it.
 
-**Evidence standard:** Keep measured results, assumptions, hypothetical examples, and commercial scenarios clearly separated. Internal time-value estimates are not automatically cash savings; possible external revenue is not guaranteed income. Only publish information approved for public sharing.
+## Start here
 
-## Layout
+- [Current pre-proposal index](proposal/README.md)
+- [Complete single-file pre-proposal (NotebookLM source)](proposal/complete-pre-proposal.md)
+- [Evidence and calculation register](evidence/README.md)
+- [NotebookLM and AI-orchestration research](notebooklm/README.md)
+- [AI coding-agent repository instructions](AGENTS.md)
 
-- `00-Inbox/` — unsorted suggestions and questions.
-- `10-Strategy/` — short and detailed management proposals, commercialization strategy.
-- `20-Architecture/` — shared approach and integration boundaries.
-- `30-Decisions/` — approved assumptions and decision log.
-- `40-Ideas/` — **one folder per proposed tool** with overview and eventual supporting analysis.
-- `50-Cost-Benefit/` — shared method and consolidated portfolio comparison.
-- `60-Pilot/` — 60-day pilot plan and measurement protocol.
-- `70-Project-State/` — current status, deliverables, and next actions.
-- `80-Glossary/` — management-friendly definitions.
-- `90-Sources/` — evidence register and source/permission guidance.
-- `Templates/` — consistent reusable documents.
+## Five current priority pilots
 
-The linked repository for implementation of a tool (such as the RF Scanner) remains authoritative for what the software currently does. These proposal documents are planning material, not evidence of completed implementation.
+1. Automated Inventory Cycle Counting
+2. Centralized Reporting & Automated Business Intelligence
+3. Automated Batch Shipping & SAP Integration
+4. **Warehouse Slotting & Picking Optimization**
+5. RF Scanner & Warehouse Management System
+
+**Automated Direct-Ship Processing & SAP Invoice Management** was moved from pilot #4 into the first near-term item of the [tiered appendix](proposal/appendix-future-opportunities.md). It is reportedly partially built, but readiness must be verified.
+
+## October 18 updates
+
+- Slotting is driven by **physical pick frequency**, not revenue or raw sales quantity.
+- Cycle-counting intervals **A = 30, B = 90, C = 365 calendar days** are provisional test assumptions, not policy.
+- Historical 2,020 completed shipments (Oct 2025–Sep 2026) support a **projected**, not achieved, shipping time scenario of 33.7–36.5 hours annually.
+- AI agents/orchestration are a separate research direction, **not** a sixth approved pilot.
+
+Original numbered folders, templates and master.md remain historical. The current authority is the proposal/ material. This repository is **public**: do not commit private SAP exports, actual invoices, customer/employee data, prices, credentials or internal screenshots without company approval. Figures here require revalidation before circulation. Main is not updated by this feature-branch work.
