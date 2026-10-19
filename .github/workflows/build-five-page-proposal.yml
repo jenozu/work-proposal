@@ -1,0 +1,41 @@
+name: Build five-page proposal assets
+
+on:
+  push:
+    branches:
+      - feat/management-proposal-final
+    paths:
+      - '10-Strategy/management-proposal-2026-10/build_five_page.py'
+      - '.github/workflows/build-five-page-proposal.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feat/management-proposal-final
+      - name: Install renderer
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libreoffice-writer poppler-utils fonts-crosextra-carlito
+          python -m pip install python-docx
+      - name: Build editable and PDF versions
+        run: |
+          mkdir -p 10-Strategy/management-proposal-2026-10
+          python 10-Strategy/management-proposal-2026-10/build_five_page.py
+          libreoffice -env:UserInstallation=file:///tmp/lo_marind_brief --headless --convert-to pdf --outdir 10-Strategy/management-proposal-2026-10 10-Strategy/management-proposal-2026-10/Marindustrial_5_Page_Management_Brief.docx
+          pdfinfo 10-Strategy/management-proposal-2026-10/Marindustrial_5_Page_Management_Brief.pdf | grep -E '^Pages:\s+5$'
+      - name: Commit produced files on proposal branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add 10-Strategy/management-proposal-2026-10/Marindustrial_5_Page_Management_Brief.docx 10-Strategy/management-proposal-2026-10/Marindustrial_5_Page_Management_Brief.pdf
+          if ! git diff --cached --quiet; then
+            git commit -m "docs: publish five-page management brief PDF and Word"
+            git push origin HEAD:feat/management-proposal-final
+          fi
