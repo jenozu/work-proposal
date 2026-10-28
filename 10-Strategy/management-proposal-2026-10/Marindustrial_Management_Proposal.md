@@ -110,7 +110,7 @@ Placement also depends on size, weight, safe handling and storage requirements. 
 ## 05 | RF Scanner & Warehouse Management System
 **Stage and progress:** Working development project, about 70%.
 
-**Evidence:** Which features are live must be confirmed against the implementation repository. SAP test-server access and an integration licence are still needed.
+**Evidence:** Which features are live must be confirmed against the implementation repository. Testing can use the existing SAP test server; any licence for posting into SAP is still to be confirmed.
 
 [[PAGE_BREAK]]
 
@@ -164,6 +164,9 @@ A tool is only useful while someone keeps it working. Testing, security, trainin
 - **Personal time.** About two hours of after-hours time toward the evaluation, with the schedule to be agreed.
 - **Fair terms afterwards.** If management then wants more work, a payment structure for additional time can be agreed once the first results have been reviewed.
 
+## Why the starting cost is low
+Marindustrial already has an SAP test server, so features can be tested without a new environment or purchase. With a read-only SQL username and password, approved by IT, the proposer could extract SAP data automatically for testing and reporting at no additional software cost expected. Writing back into SAP is a separate later step that would need IT and SAP agreement and may need a licence.
+
 ## Investment discipline
 Build when the problem is specific and repeated. Buy when an existing product fits. Stop when measured benefits do not justify the cost.
 
@@ -184,11 +187,12 @@ Time per task, error and rework rates, usability, adoption and ongoing maintenan
 ## Resources and approvals requested
 1. Authorize the 60-day evaluation and agree a limited work-time allocation (to be agreed) in addition to the proposer's own time.
 2. Select one or two pilots and name a management sponsor.
-3. Permit appropriate data access and staff participation, including a SAP test environment, subject to IT and SAP policies.
+3. Permit use of the existing SAP test server and read-only SQL access to SAP data, and staff participation, subject to IT and SAP policies.
 4. Schedule a day-60 review before approving further investment or a permanent role.
 
 ## Main risks and how they are controlled
 - **SAP access or licence is delayed.** Shipping runs as a standalone tool first, so value does not depend on SAP access.
+- **Data access risk.** Access is read-only and tested on the SAP test server first. Nothing is written to production SAP without IT and SAP acceptance.
 - **A tool gives wrong results.** Parallel manual checks, duplicate prevention and a manual fallback during the trial.
 - **Time runs short.** Scope is limited to one or two pilots, and a neutral or negative result is reported as such.
 - **One person owns everything.** Documentation and version control from the start, with a continuity plan.
