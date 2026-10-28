@@ -10,6 +10,7 @@ Several tools are already well advanced. What is missing is not ideas but protec
 - **More time for useful work.** Reduce repetitive handling and unnecessary warehouse movement.
 - **More reliable operations.** Standardize repeat tasks, validate entries and make issues easier to trace.
 - **Better management visibility.** Make recurring reports clearer, more consistent and easier to act on.
+- **A possible long-term product opportunity.** Tools proven inside Marindustrial might later be adapted for other distributors and warehouses. This is separate from the internal case, is not counted in any benefit, and would first need agreement on ownership and rights (see the appendix).
 
 ## Five pilot projects
 1. **Automated Inventory Cycle Counting** — Earlier discrepancy detection
@@ -198,6 +199,31 @@ Time per task, error and rework rates, usability, adoption and ongoing maintenan
 - **One person owns everything.** Documentation and version control from the start, with a continuity plan.
 
 > **DAY-60 DECISION:** Approve additional development only if the evaluation shows a credible operational benefit, acceptable system risk and enough recurring work to support ongoing ownership. No permanent staffing decision is required now.
+
+[[PAGE_BREAK]]
+
+# Appendix: future opportunities
+*A backlog for later consideration. None of these is part of the 60-day request.*
+
+## Near-term opportunities (review after the first pilot results)
+- **Direct-Ship Processing & SAP Invoice Management.** Reduce repeat handling of direct-ship transactions, invoice searches and document filing. First in line; scope and permissions still to be confirmed.
+- **Invoice Retrieval.** Search approved mailboxes and folders for supplier invoices. Earlier prototype; current status to be verified.
+- **Invoice / PO / GRPO Comparator.** Flag differences between purchase orders, receipts and invoices. Previously developed; deployment to be verified.
+- **Landed Cost Reconciliation.** Match freight and brokerage charges to receipts. Existing tool; needs review against current SAP data access.
+- **Commercial Invoice Generator.** Prepare international shipping documents from a few inputs, with human review of customs details.
+- **Shipment Notifications.** Send confirmations and tracking automatically to reduce manual emails.
+
+## Later opportunities (concept stage)
+- Customer order-status portal and customer service assistant
+- Inventory and purchasing analytics, dormant-customer identification and product cross-sell analysis (extensions of the reporting pilot)
+- SAP operations companion, GRPO document attachment and SAP document auto-print
+- Teams operations task dashboard and internal information search
+- Website and lead-capture improvements and market and competitor monitoring
+
+Receiving, putaway and wave picking are treated as modules of the RF Scanner project, not separate projects.
+
+## Long-term commercialization (separate from the internal case)
+If a tool proves valuable inside Marindustrial, it could later be offered to other distributors or warehouses through licensing, setup and support. This would require, first: agreement on who owns the software and the right to sell it; evidence of customer demand and willingness to pay; carrier and SAP licensing terms; and the added cost of support and security. No revenue is assumed anywhere in this proposal.
 
 ---
 

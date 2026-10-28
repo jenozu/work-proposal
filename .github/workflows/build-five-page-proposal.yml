@@ -29,7 +29,7 @@ jobs:
           mkdir -p 10-Strategy/management-proposal-2026-10
           python 10-Strategy/management-proposal-2026-10/build_five_page.py Marindustrial_Management_Proposal
           libreoffice -env:UserInstallation=file:///tmp/lo_marind_brief --headless --convert-to pdf --outdir 10-Strategy/management-proposal-2026-10 10-Strategy/management-proposal-2026-10/Marindustrial_Management_Proposal.docx
-          pdfinfo 10-Strategy/management-proposal-2026-10/Marindustrial_Management_Proposal.pdf | grep -E '^Pages:\s+7$'
+          pdfinfo 10-Strategy/management-proposal-2026-10/Marindustrial_Management_Proposal.pdf | grep -E '^Pages:\s+8$'
       - name: Commit produced files on proposal branch
         run: |
           git config user.name "github-actions[bot]"
