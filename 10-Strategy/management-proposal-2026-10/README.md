@@ -1,3 +1,5 @@
+> **Current version (2026-10-28):** `Marindustrial_Management_Proposal` (seven pages) supersedes the five-page brief below. Build: `python build_five_page.py Marindustrial_Management_Proposal`.
+
 # Management proposal — internal development capability (October 2026)
 
 **Status:** revision for management consideration; not approved for rollout.  

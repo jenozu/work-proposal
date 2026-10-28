@@ -21,3 +21,6 @@ tags:
 
 ## Open decisions
 Pilot tool count; exact baseline volumes; approved labour-cost assumptions; internal support owner; vendor quote scope; employer/IP authorization for external licensing.
+| 2026-10-28 | Final proposal is a seven-page management proposal (`Marindustrial_Management_Proposal`) that supersedes the five-page brief. Formal ask: 60-day evaluation of one or two pilots, starting with Batch Shipping; role decision deferred to day 60. | User-confirmed |
+| 2026-10-28 | Shipping baseline: about 75 seconds per shipment (about 30 s Purolator plus about 45 s SAP), timed by the proposer. The 10-15 s target is a design estimate. The tool is a standalone Purolator tool (about 80%); SAP connection not yet built. | User-confirmed |
+| 2026-10-28 | Proposer offers the first approved project at no charge and about two after-hours hours toward the evaluation; payment for further time to be agreed after results. Work-time allocation and sponsor: to be agreed. | User-confirmed |

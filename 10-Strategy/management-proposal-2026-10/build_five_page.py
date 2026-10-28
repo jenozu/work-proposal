@@ -10,8 +10,10 @@ from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 
 DIR = Path(__file__).resolve().parent
-SRC = DIR / "Marindustrial_5_Page_Management_Brief.md"
-DEST = DIR / "Marindustrial_5_Page_Management_Brief.docx"
+import sys
+NAME = sys.argv[1] if len(sys.argv) > 1 else "Marindustrial_5_Page_Management_Brief"
+SRC = DIR / f"{NAME}.md"
+DEST = DIR / f"{NAME}.docx"
 NAVY = "193544"
 TEAL = "118B92"
 DARK = "1F3640"
@@ -89,8 +91,8 @@ def callout(doc, line):
             text_run(p, part, 9.55, WHITE)
     norules(tab)
 
-def header(doc, page, title, subtitle):
-    top = paragraph(doc, f"MANAGEMENT BRIEF  /  OCTOBER 2026    •    {page:02}/05",
+def header(doc, page, title, subtitle, total=5):
+    top = paragraph(doc, f"MANAGEMENT BRIEF  /  OCTOBER 2026    •    {page:02}/{total:02}",
                     size=8, color=TEAL, bold=True, after=12)
     paragraph(doc, title, size=23.2 if page != 1 else 26, color=NAVY, bold=True, after=10)
     if subtitle:
@@ -129,7 +131,7 @@ def make_card(doc, title, fields):
 
 lines = SRC.read_text(encoding="utf-8").splitlines()
 pages = "\n".join(lines).split("[[PAGE_BREAK]]")
-if len(pages) != 5: raise RuntimeError(f"Expected 5 source sections; found {len(pages)}")
+TOTAL = len(pages)
 
 doc = Document()
 sec = doc.sections[0]
@@ -161,7 +163,7 @@ for ix, source in enumerate(pages, start=1):
     raw = [x.rstrip() for x in source.splitlines() if x.strip()]
     first = next((a[2:] for a in raw if a.startswith("# ")), "Management Proposal")
     subtitles = [x.strip("*") for x in raw if x.startswith("*") and not x.startswith("**")]
-    header(doc, ix, first, subtitles[0] if subtitles else "")
+    header(doc, ix, first, subtitles[0] if subtitles else "", TOTAL)
     i=0
     while i<len(raw):
         l=raw[i]
@@ -189,7 +191,7 @@ for ix, source in enumerate(pages, start=1):
         i+=1
 
 props = doc.core_properties
-props.title = "Marindustrial | Five-page Management Brief"
+props.title = "Marindustrial | Management Proposal"
 props.subject = "Controlled internal software development evaluation"
 props.author = "Marindustrial proposal working draft"
 doc.save(DEST)

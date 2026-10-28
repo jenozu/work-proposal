@@ -2,7 +2,7 @@
 type: project-state
 status: active
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-10-28
 confidence: observed
 tags:
   - roadmap
@@ -28,3 +28,8 @@ tags:
 5. Refresh executive and detailed CBAs with measured data.
 6. Request equivalent external proposals if cost-comparison evidence is desired.
 7. Separately research commercial demand and employer/IP ownership.
+
+## Update 2026-10-28
+- Seven-page proposal built: `10-Strategy/management-proposal-2026-10/Marindustrial_Management_Proposal` (md, docx, pdf). The five-page brief is superseded.
+- Owner-reported build progress: cycle counting about 50%, reporting/BI about 65%, batch shipping about 80% (standalone Purolator tool in `jenozu/puro`; SAP connection not built), slotting about 50%, RF Scanner about 70%. These are estimates, not evidence.
+- Older planning notes (Executive/Detailed Proposal, One-Page Overview, Portfolio Summary) predate the five-pilot scope and are retained as background only.
